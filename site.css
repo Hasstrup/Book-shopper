@@ -1,0 +1,10 @@
+#notif-modal{
+    display:none;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 5px
+}
+
+.close {
+    font-size: 20px;
+}
