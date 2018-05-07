@@ -1,0 +1,100 @@
+.main-modal-backdrop {
+  position: fixed;
+  background-color: rgba(0,0,0, .5);
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  .modal-clickable {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    top: 0;
+  }
+  .main-modal-content {
+    display: flex;
+    align-self: center;
+    width: 50%;
+    height: 100%;
+    min-height: 404px;
+    background-color: white;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row nowrap;
+    position: relative;
+    .cover-photo {
+      flex-basis: 50%;
+      .image-content {
+        object-fit: cover;
+        height: 600px;
+        width: 100%;
+        position: relative;
+        bottom: -1px;
+      }
+    }
+    .book-details-cont {
+      flex-flow: column nowrap;
+      flex-basis: 50%;
+      .author-details {
+        .title-and-author-name {
+          position: absolute;
+          top: 0;
+          padding-left: 9%;
+          .book-title {
+            font-size: 24px;
+            font-family: gotham;
+          }
+          .author-name {
+            font-family: apercu;
+            font-size: 14px;
+            position: relative;
+            right: -15%;
+            top: -5%;
+          }
+        }
+        .excerpt-div {
+          font-family: apercu;
+          font-size: 14px;
+          text-align: center;
+          margin-top: 35%;
+          position: relative;
+          top: -10px;
+          font-style: italic;
+        }
+        .description {
+          padding-left: 5%;
+          .desc {
+            font-family: apercu;
+            font-size: 13px;
+            width: 90%;
+          }
+        }
+      }
+    }
+    .button-stack {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      p {
+        font-size: 13px;
+        font-family: 'apercu';
+        color: #B3B6B7;
+        &:hover {
+          cursor: pointer;
+          color: #E74C3C;
+        }
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: gotham;
+  src: url('./gotham-b.ttf')
+}
+@font-face {
+  font-family: apercu;
+  src: url('./apercu.otf');
+}
